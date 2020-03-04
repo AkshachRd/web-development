@@ -1,4 +1,5 @@
 <?php
+header("Content-Type: text/plain");
 $inputIdentifier = getQueryStringParameter('identifier');
 checkIdentifier($inputIdentifier);
 function checkIdentifier(string $identifier): ?string
