@@ -1,0 +1,20 @@
+PROGRAM Hello(INPUT, OUTPUT);
+USES
+  DOS;
+VAR
+  nameinput, name: STRING;
+  I, J: INTEGER;
+BEGIN
+  name := '';
+  WRITELN('Content-Type: text/plain');
+  WRITELN;
+  nameinput := GetEnv('QUERY_STRING');
+  FOR I := 6 TO LENGTH(nameinput)
+  DO
+    name[I - 5] := nameinput[I];
+  IF nameinput <> ''
+  THEN
+    WRITELN('Hello dear, ', nameinput, '!')
+  ELSE
+    WRITELN('Hello Anonymous!')
+END.
