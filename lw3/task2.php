@@ -2,7 +2,8 @@
 header("Content-Type: text/plain");
 $inputIdentifier = getQueryStringParameter('identifier');
 checkIdentifier($inputIdentifier);
-function checkIdentifier(string $identifier): ?string
+
+function checkIdentifier(string $identifier): void
 {
     $incorrectSymbol = False;
     $inputNothing = False;
@@ -33,14 +34,14 @@ function checkIdentifier(string $identifier): ?string
     }
     if ($inputNothing === True)
     {
-        echo 'The indetificator have not been entered';
+        echo 'The identifier have not been entered';
     }
     if ($incorrectSymbol === True)
     {
-        echo 'Incorrect symbol in the indetificator';
+        echo 'Incorrect symbol in the identifier';
     }
-    return '0';
 }
+
 function getQueryStringParameter(string $name): ?string
 {
     return isset($_GET[$name]) ? $_GET[$name] : null;
