@@ -2,6 +2,7 @@
 header("Content-Type: text/plain");
 $inputPassword = getQueryStringParameter('password');
 echo passwordStrength($inputPassword);
+
 function passwordStrength(string $password): ?int
 {
     $digits = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
@@ -70,6 +71,7 @@ function passwordStrength(string $password): ?int
 
     return $strength;
 }
+
 function getQueryStringParameter(string $name): ?string
 {
     return isset($_GET[$name]) ? $_GET[$name] : null;
