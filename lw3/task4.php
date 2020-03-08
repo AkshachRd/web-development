@@ -35,7 +35,15 @@ function surveySaver(array $data): void
 	$filename = './data/';
 	$filename .= $data['email'];
 	$filename .= '.txt';
-    file_put_contents($filename, $resultString);
+	if (file_exists($filename === true))
+    {
+        file_put_contents($filename, '');
+        file_put_contents($filename, $resultString);
+    }
+	else
+    {
+        file_put_contents($filename, $resultString);
+    }
 }
 
 function getQueryStringParameter(string $name): ?string
