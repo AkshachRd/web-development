@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b45ac07-0562-486e-b0e3-b17881736c5a" name="Default Changelist" comment="">
+    <list default="true" id="3b45ac07-0562-486e-b0e3-b17881736c5a" name="Default Changelist" comment="The bugs were fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lw3/task2.php" beforeDir="false" afterPath="$PROJECT_DIR$/lw3/task2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lw3/task4.php" beforeDir="false" afterPath="$PROJECT_DIR$/lw3/task4.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +34,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -49,22 +47,50 @@
       <option name="presentableId" value="Default" />
       <updated>1583339776766</updated>
       <workItem from="1583339777941" duration="10102000" />
-      <workItem from="1583673541831" duration="920000" />
+      <workItem from="1583673541831" duration="1938000" />
     </task>
+    <task id="LOCAL-00001" summary="Boolean variables were aligned to PHP code style">
+      <created>1583674723080</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583674723080</updated>
+    </task>
+    <task id="LOCAL-00002" summary="The bugs were fixed">
+      <created>1583674866535</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583674866535</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Boolean variables were aligned to PHP code style" />
+    <MESSAGE value="The bugs were fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="The bugs were fixed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="530" y="178" key="#CLI_Interpreters" timestamp="1583353223316">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="530" y="178" key="#CLI_Interpreters/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1583353223316" />
+    <state x="585" y="198" key="#Notifications" timestamp="1583674954737">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="198" key="#Notifications/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1583674954737" />
     <state x="657" y="114" key="#PHP" timestamp="1583353226597">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="657" y="114" key="#PHP/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1583353226597" />
+    <state x="618" y="134" key="CommitChangelistDialog2" timestamp="1583675119882">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="618" y="134" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1583675119882" />
     <state x="730" y="278" key="FileChooserDialogImpl" timestamp="1583352919157">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -73,10 +99,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="784" y="447" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1583357604791" />
-    <state x="451" y="166" key="SettingsEditor" timestamp="1583353455937">
+    <state x="451" y="166" key="SettingsEditor" timestamp="1583675483389">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="451" y="166" key="SettingsEditor/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1583353455937" />
+    <state x="451" y="166" key="SettingsEditor/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1583675483389" />
+    <state x="585" y="272" key="Vcs.Push.Dialog.v2" timestamp="1583675501241">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1583675501241" />
     <state x="689" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1583673546310">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -85,9 +115,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="802" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1583355964936" />
-    <state x="613" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1583340607440">
+    <state x="649" y="252" key="run.anything.popup" timestamp="1583675108021">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="613" y="243" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1583340607440" />
+    <state x="649" y="252" key="run.anything.popup/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1583675108021" />
+    <state x="613" y="243" width="672" height="678" key="search.everywhere.popup" timestamp="1583675498767">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="613" y="243" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1583675498767" />
   </component>
 </project>

@@ -7,6 +7,7 @@ $inputData = array(
 	'age' => getQueryStringParameter('age'),
 );
 surveySaver($inputData);
+
 function surveySaver(array $data): void
 {
 	$resultString = '';
