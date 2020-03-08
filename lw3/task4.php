@@ -6,7 +6,8 @@ $inputData = array(
 	'email' => getQueryStringParameter('email'),
 	'age' => getQueryStringParameter('age'),
 );
-function surveySaver(string $data): void
+surveySaver($inputData);
+function surveySaver(array $data): void
 {
 	$resultString = '';
 
@@ -33,7 +34,7 @@ function surveySaver(string $data): void
 	$filename = './data/';
 	$filename .= $data['email'];
 	$filename .= '.txt';
-	file_put_contents($filename, $resultString);
+    file_put_contents($filename, $resultString);
 }
 
 function getQueryStringParameter(string $name): ?string
