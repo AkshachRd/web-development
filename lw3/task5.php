@@ -9,46 +9,10 @@ function surveyInfo(string $email): void
     $filename .= $email;
     $filename .= '.txt';
     $data = file_get_contents($filename);
-    if (getValueFromSurveyInfo($data, 'First Name: ') === '')
-    {
-        echo 'First Name:  ';
-        echo "\n";
-    }
-    else
-    {
-        echo 'First Name: '.getValueFromSurveyInfo($data, 'First Name: ');
-        echo "\n";
-    }
-    if (getValueFromSurveyInfo($data, 'Last Name: ') === '')
-    {
-        echo 'Last Name:  ';
-        echo "\n";
-    }
-    else
-    {
-        echo 'Last Name: '.getValueFromSurveyInfo($data, 'Last Name: ');
-        echo "\n";
-    }
-    if (getValueFromSurveyInfo($data, 'Email: ') === '')
-    {
-        echo 'Email:  ';
-        echo "\n";
-    }
-    else
-    {
-        echo 'Email: '.getValueFromSurveyInfo($data, 'Email: ');
-        echo "\n";
-    }
-    if (getValueFromSurveyInfo($data, 'Age: ') === '')
-    {
-        echo 'Age:  ';
-        echo "\n";
-    }
-    else
-    {
-        echo 'Age: '.getValueFromSurveyInfo($data, 'Age: ');
-        echo "\n";
-    }
+    echo 'First Name: '.getValueFromSurveyInfo($data, 'First Name: ')."\n";
+    echo 'Last Name: '.getValueFromSurveyInfo($data, 'Last Name: ')."\n";
+    echo 'Email: '.getValueFromSurveyInfo($data, 'Email: ')."\n";
+    echo 'Age: '.getValueFromSurveyInfo($data, 'Age: ')."\n";
 }
 
 function getValueFromSurveyInfo(string $data, string $position): ?string
