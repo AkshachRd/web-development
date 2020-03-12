@@ -1,7 +1,14 @@
 <?php
 header("Content-Type: text/plain");
 $inputPassword = getQueryStringParameter('password');
-echo passwordStrength($inputPassword);
+if (($inputPassword === '') | ($inputPassword === null))
+{
+    echo 'Введите пороль';
+}
+else
+{
+    echo passwordStrength($inputPassword);
+}
 
 function passwordStrength(string $password): ?int
 {
@@ -26,14 +33,20 @@ function passwordStrength(string $password): ?int
     {
         $lowRegisterLettersInPassword += $passwordArrayBySymbols[$lettersLow[$i]];
     }
-    $strength += ($n - $lowRegisterLettersInPassword) * 2;
-
+    if ($lowRegisterLettersInPassword !== 0)
+    {
+        $strength += ($n - $lowRegisterLettersInPassword) * 2;
+    }
+    
     $upRegisterLettersInPassword = 0;
     for ($i = 0; $i !== count($lettersUp); $i++)
     {
         $upRegisterLettersInPassword += $passwordArrayBySymbols[$lettersUp[$i]];
     }
-    $strength += ($n - $upRegisterLettersInPassword) * 2;
+    if ($upRegisterLettersInPassword !== 0)
+    {
+        $strength += ($n - $upRegisterLettersInPassword) * 2;
+    }
 
     if ($digitsInPassword === 0)
     {
