@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700&display=swap&subset=cyrillic');
 
-.main {
+.main
+{
   margin-top: 100px;
-  margin-left: 340px;
+  margin-left: 460px;
   margin-right: 496px;
   align-items: flex-start;
   display: flex;
@@ -21,7 +22,8 @@
   flex-direction: row;
 }
 
-.photo  {
+.photo
+{
   width: 330px;
   height: 350px;
   border-radius: 5px;
@@ -30,38 +32,31 @@
   margin-right: 60px;
 }
 
-.list_start {
-  font-family: 'Open Sans';
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.33;
-  text-align: left;
+.list_start
+{
+  font: bold 24px/1.33 'Open Sans';
   color: #15a98c;
   width: 330px;
   margin-right: 60px;
 }
 
-.list {
-  font-family: Georgia;
-  font-size: 19px;
-  line-height: 1.89;
-  text-align: left;
+.list
+{
+  font: 19px/1.89 Georgia;
   padding-left: 20px;
   color: #555555;
   margin-bottom: 40px; 
 }
 
-.quotes_image {
+.quotes_image
+{
   padding-top: 50px;
-  margin: 0; 
 }
 
-.quote {
+.quote
+{
   width: 444px;
-  font-family: Georgia;
-  font-size: 28px;
-  font-style: italic;
-  line-height: 1.5;
+  font: italic 28px/1.5 Georgia;
   text-align: left;
   color: #848484;
   position: relative;
@@ -71,33 +66,27 @@
   margin-bottom: 27px; 
 }
 
-.quote_author {
+.quote_author
+{
   height: 17px;
-  font-family: 'Open Sans';
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 2.63;
-  text-align: left;
+  font: Bold 16px/2.63 'Open Sans';
   color: #333333;
   margin-left: 63px;
   position: relative;
   bottom: 49px;
 }
 
-.first_heading {
+.first_heading
+{
   width: 214px;
   height: 44px;
-  font-family: 'Open Sans';
-  font-size: 48px/0.88;
-  font-weight: bold;
-  line-height: 0.88;
-  text-align: left;
+  font: bold 48px/0.88 'Open Sans';
   color: #333333;
-  padding-top: 6px;
-  margin-bottom: 0;
+  margin-top: 23px;
 }
 
-.green_line  {
+.green_line
+{
   width: 60px;
   height: 6px;
   border-radius: 3px;
@@ -106,13 +95,11 @@
   margin-bottom: 46px;
 }
 
-.phrase {
+.first_phrase
+{
   width: 508px;
   height: 178px;
-  font-family: Georgia;
-  font-size: 19px;
-  line-height: 1.68;
-  text-align: left;
+  font: 19px/1.68 Georgia;
   color: #555555;
   margin-bottom: 55px;
 }
@@ -120,25 +107,26 @@
 .second_heading 
 {
   height: 27px;
-  font-family: 'Open Sans';
-  font-size: 36px;
-  line-height: 1.17;
-  font-style: normal;
-  font-weight: normal;
-  font-stretch: normal;
-  text-align: left;
+  font: 36px/1.17 'Open Sans';
   color: #333333;
   margin-bottom: 31px;
+}
+
+.second_phrase
+{
+  width: 555px;
+  height: 178px;
+  font: 19px/1.68 Georgia;
+  text-align: left;
+  color: #555555;
+  margin-bottom: 55px;
 }
 
 .green_write 
 {
   width: 139px;
   height: 18px;
-  font-family: Georgia;
-  font-size: 19px;
-  line-height: 1.68;
-  text-align: left;
+  font: 19px/1.68 Georgia;
   color: #15a98b;
   margin-bottom: 134px;
   display: inline-block;
@@ -146,7 +134,7 @@
 }
 
 .green_underline
- {
+{
   border-bottom: solid 1px #15a98b;
 }
 
