@@ -1,17 +1,24 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700&display=swap&subset=cyrillic');
 
 .main {
   margin-top: 100px;
-  margin-left: 480px;
+  margin-left: 340px;
   margin-right: 496px;
   align-items: flex-start;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
-.left_box {
-  width: 330px;
-  margin-right: 60px;
+.right_to_left_flex
+{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.left_to_right_flex
+{
+  display: flex;
+  flex-direction: row;
 }
 
 .photo  {
@@ -20,28 +27,24 @@
   border-radius: 5px;
   background-color: #132d36;
   margin-bottom: 28px;
+  margin-right: 60px;
 }
 
 .list_start {
   font-family: 'Open Sans';
   font-size: 24px;
   font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.33;
-  letter-spacing: normal;
   text-align: left;
   color: #15a98c;
+  width: 330px;
+  margin-right: 60px;
 }
 
 .list {
   font-family: Georgia;
   font-size: 19px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.89;
-  letter-spacing: normal;
   text-align: left;
   padding-left: 20px;
   color: #555555;
@@ -57,11 +60,8 @@
   width: 444px;
   font-family: Georgia;
   font-size: 28px;
-  font-weight: normal;
-  font-stretch: normal;
   font-style: italic;
   line-height: 1.5;
-  letter-spacing: normal;
   text-align: left;
   color: #848484;
   position: relative;
@@ -76,10 +76,7 @@
   font-family: 'Open Sans';
   font-size: 16px;
   font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 2.63;
-  letter-spacing: normal;
   text-align: left;
   color: #333333;
   margin-left: 63px;
@@ -91,15 +88,12 @@
   width: 214px;
   height: 44px;
   font-family: 'Open Sans';
-  font-size: 48px;
+  font-size: 48px/0.88;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 0.88;
-  letter-spacing: normal;
   text-align: left;
   color: #333333;
-  padding-top: 88px;
+  padding-top: 6px;
   margin-bottom: 0;
 }
 
@@ -117,50 +111,42 @@
   height: 178px;
   font-family: Georgia;
   font-size: 19px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.68;
-  letter-spacing: normal;
   text-align: left;
   color: #555555;
   margin-bottom: 55px;
 }
 
-.second_heading {
+.second_heading 
+{
   height: 27px;
   font-family: 'Open Sans';
   font-size: 36px;
+  line-height: 1.17;
+  font-style: normal;
   font-weight: normal;
   font-stretch: normal;
-  font-style: normal;
-  line-height: 1.17;
-  letter-spacing: normal;
   text-align: left;
   color: #333333;
   margin-bottom: 31px;
 }
 
-.green_write {
+.green_write 
+{
   width: 139px;
   height: 18px;
   font-family: Georgia;
   font-size: 19px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.68;
-  letter-spacing: normal;
   text-align: left;
   color: #15a98b;
-  margin-bottom: 0;
+  margin-bottom: 134px;
+  display: inline-block;
+  text-decoration: none;
 }
 
-.green_write_line {
-  width: 139px;
-  height: 1px;
-  border-radius: 1px;
-  background-color: #15a98b;
-  margin-top: 6px;
-  margin-bottom: 134px;
+.green_underline
+ {
+  border-bottom: solid 1px #15a98b;
 }
+
