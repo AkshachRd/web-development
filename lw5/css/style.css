@@ -3,27 +3,36 @@
 .main
 {
   margin-top: 100px;
-  margin-left: 460px;
-  margin-right: 496px;
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
+  margin-left: 480px;
+  margin-right: 337px;
+  display: block;
 }
 
-.right_to_left_flex
+.right_to_left
 {
-  display: flex;
-  flex-direction: row-reverse;
+  direction: ltr;
 }
 
-.left_to_right_flex
+.right_block_rtl
 {
-  display: flex;
-  flex-direction: row;
+  display: inline-block;
+  float: right;
+}
+
+.left_block_rtl
+{
+  display: inline-block;
+}
+
+.left_to_right
+{
+  direction: ltr;
 }
 
 .photo
 {
+  display: inline-block;
+  float: left;
   width: 330px;
   height: 350px;
   border-radius: 5px;
@@ -32,12 +41,18 @@
   margin-right: 60px;
 }
 
+.right_block_ltr
+{
+  display: inline-block;
+}
+
 .list_start
 {
   font: bold 24px/1.33 'Open Sans';
   color: #15a98c;
   width: 330px;
   margin-right: 60px;
+  margin-bottom: 0px
 }
 
 .list
@@ -82,7 +97,7 @@
   height: 44px;
   font: bold 48px/0.88 'Open Sans';
   color: #333333;
-  margin-top: 23px;
+  margin-top: 111px;
 }
 
 .green_line
@@ -119,7 +134,7 @@
   font: 19px/1.68 Georgia;
   text-align: left;
   color: #555555;
-  margin-bottom: 55px;
+  margin-bottom: 25px;
 }
 
 .green_write 
