@@ -13,13 +13,13 @@
   direction: ltr;
 }
 
-.right_block_rtl
+.right_block_right_to_left
 {
   display: inline-block;
   float: right;
 }
 
-.left_block_rtl
+.left_block_right_to_left
 {
   display: inline-block;
 }
@@ -41,7 +41,7 @@
   margin-right: 60px;
 }
 
-.right_block_ltr
+.right_block_left_to_right
 {
   display: inline-block;
 }
