@@ -1,158 +1,176 @@
-function calc(str) {
-  let l = 0;
-  let n = str.length;
-  console.log( answ(n, l) );
-}
-function findNum(n, l) {
+let l = 0;
+function findNum(n, s) {
   let num = '';
   //
   while (l < n) {
     if (
-      n[l] === '0' ||
-      n[l] === '1' ||
-      n[l] === '2' ||
-      n[l] === '3' ||
-      n[l] === '4' ||
-      n[l] === '5' ||
-      n[l] === '6' ||
-      n[l] === '7' ||
-      n[l] === '8' ||
-      n[l] === '9'
+      s[l] === '0' ||
+      s[l] === '1' ||
+      s[l] === '2' ||
+      s[l] === '3' ||
+      s[l] === '4' ||
+      s[l] === '5' ||
+      s[l] === '6' ||
+      s[l] === '7' ||
+      s[l] === '8' ||
+      s[l] === '9'
     ) {
-      num = num + n[l];
+      num = num + s[l];
     } else if (num !== '') {
       break;
     }
     l++;
   }
-  console.log(Number(num));
-  return Number(num);
+  return num;
 }
-function findBrackets(n, l) {
+function findBrackets(n, s) {
+  let brackestResult;
+  //
   while (l < n) {
-    answ(n, l);
-    if (n[l] === ')') {
+    brackestResult = answ(n, s);
+    if (s[l] === ')') {
       break;
     }
     l++;
   }
+  return brackestResult;
 }
-function findSigh(n, l) {
+function findSigh(n, s) {
   let sigh;
   //
   while (l < n) {
     if (
-      n[l] === '*' ||
-      n[l] === '/' ||
-      n[l] === '+' ||
-      n[l] === '-' 
+      s[l] === '*' ||
+      s[l] === '/' ||
+      s[l] === '+' ||
+      s[l] === '-' 
     ) {
-      sigh = n[l];
+      sigh = s[l];
+    } else if (sigh !== undefined) {
+      break;
     }
     l++;
   }
   return sigh;
 }
-function answ(n, l) {
-  let a;
+function answ(n, s) {
+  let a, b;
   let sigh;
   //
   while (l < n) {
-    sigh = findSigh(n, l);
+    sigh = findSigh(n, s);
     //*********************************************************
     if (sigh === '*') {
       while (l < n) {
-        if (n[l] === '('){
-          a = findBrackets(n, l);
+        if (s[l] === '('){
+          a = findBrackets(n, s);
+          break;
         } else if (
-          n[l] === '0' ||
-          n[l] === '1' ||
-          n[l] === '2' ||
-          n[l] === '3' ||
-          n[l] === '4' ||
-          n[l] === '5' ||
-          n[l] === '6' ||
-          n[l] === '7' ||
-          n[l] === '8' ||
-          n[l] === '9'
+          s[l] === '0' ||
+          s[l] === '1' ||
+          s[l] === '2' ||
+          s[l] === '3' ||
+          s[l] === '4' ||
+          s[l] === '5' ||
+          s[l] === '6' ||
+          s[l] === '7' ||
+          s[l] === '8' ||
+          s[l] === '9'
         ) {
-          a = findNum(n, l);
+          a = findNum(n, s);
+          break;
         }
         l++;
       }
-      a = a * findNum(n, l);
+      b = findNum(n, s);
+      a = b * a; 
     }
     ///////////////////////////////////////////////////////////
     if (sigh === '/') {
       while (l < n) {
-        if (n[l] === '('){
-          a = findBrackets(n, l);
+        if (s[l] === '('){
+          a = findBrackets(n, s);
+          break;
         } else if (
-          n[l] === '0' ||
-          n[l] === '1' ||
-          n[l] === '2' ||
-          n[l] === '3' ||
-          n[l] === '4' ||
-          n[l] === '5' ||
-          n[l] === '6' ||
-          n[l] === '7' ||
-          n[l] === '8' ||
-          n[l] === '9'
+          s[l] === '0' ||
+          s[l] === '1' ||
+          s[l] === '2' ||
+          s[l] === '3' ||
+          s[l] === '4' ||
+          s[l] === '5' ||
+          s[l] === '6' ||
+          s[l] === '7' ||
+          s[l] === '8' ||
+          s[l] === '9'
         ) {
-          a = findNum(n, l);
+          a = findNum(n, s);
+          break;
         }
         l++;
       }
-      a = a / findNum(n, l);    
+      b = findNum(n, s);
+      a = b / a;    
     }
     //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     if (sigh === '+') {
       while (l < n) {
-        if (n[l] === '('){
-          a = findBrackets(n, l);
+        if (s[l] === '('){
+          a = findBrackets(n, s);
+          break;
         } else if (
-          n[l] === '0' ||
-          n[l] === '1' ||
-          n[l] === '2' ||
-          n[l] === '3' ||
-          n[l] === '4' ||
-          n[l] === '5' ||
-          n[l] === '6' ||
-          n[l] === '7' ||
-          n[l] === '8' ||
-          n[l] === '9'
+          s[l] === '0' ||
+          s[l] === '1' ||
+          s[l] === '2' ||
+          s[l] === '3' ||
+          s[l] === '4' ||
+          s[l] === '5' ||
+          s[l] === '6' ||
+          s[l] === '7' ||
+          s[l] === '8' ||
+          s[l] === '9'
         ) {
-          a = findNum(n, l);
+          a = findNum(n, s);
+          break;
         }
         l++;
       }
-      a = a + findNum(n, l);    
+      b = findNum(n, s);
+      a = Number(b) + Number(a);     
     }
     //---------------------------------------------------------
     if (sigh === '-') {
       while (l < n) {
-        if (n[l] === '('){
-          a = findBrackets(n, l);
+        if (s[l] === '('){
+          a = findBrackets(n, s);
+          break;
         } else if (
-          n[l] === '0' ||
-          n[l] === '1' ||
-          n[l] === '2' ||
-          n[l] === '3' ||
-          n[l] === '4' ||
-          n[l] === '5' ||
-          n[l] === '6' ||
-          n[l] === '7' ||
-          n[l] === '8' ||
-          n[l] === '9'
+          s[l] === '0' ||
+          s[l] === '1' ||
+          s[l] === '2' ||
+          s[l] === '3' ||
+          s[l] === '4' ||
+          s[l] === '5' ||
+          s[l] === '6' ||
+          s[l] === '7' ||
+          s[l] === '8' ||
+          s[l] === '9'
         ) {
-          a = findNum(n, l);
+          a = findNum(n, s);
+          break;
         }
         l++;
       }
-      a = a - findNum(n, l);    
+      b = findNum(n, s);
+      a = b - a;    
+    } else if (a !== undefined) {
+      break;
     }
     l++;
   }
   return a;
 }
-calc("* 1 7")
+function calc(str) {
+  let n = str.length;
+  console.log( answ(n, str) );
+}
+calc("- (* 2 3) 8")
