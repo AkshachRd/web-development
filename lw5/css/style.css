@@ -3,9 +3,9 @@
 .main
 {
   margin-top: 100px;
-  margin-left: 480px;
-  margin-right: 337px;
-  display: block;
+  margin-left: 450px;
+  margin-right: 492px;
+  display: block; 
 }
 
 .right_to_left
@@ -84,11 +84,12 @@
 .quote_author
 {
   height: 17px;
-  font: Bold 16px/2.63 'Open Sans';
+  font: bold 16px/2.63 'Open Sans';
   color: #333333;
   margin-left: 63px;
   position: relative;
   bottom: 49px;
+  margin-bottom: 110px;
 }
 
 .first_heading
@@ -97,7 +98,7 @@
   height: 44px;
   font: bold 48px/0.88 'Open Sans';
   color: #333333;
-  margin-top: 111px;
+  margin-top: 23px;
 }
 
 .green_line
@@ -106,8 +107,8 @@
   height: 6px;
   border-radius: 3px;
   background-color: #45c3aa;
-  margin-top: 36px;
-  margin-bottom: 46px;
+  margin-top: 24px;
+  margin-bottom: 17px;
 }
 
 .first_phrase
@@ -116,7 +117,9 @@
   height: 178px;
   font: 19px/1.68 Georgia;
   color: #555555;
-  margin-bottom: 55px;
+  margin-bottom: 80px;
+  white-space: pre-line;
+  margin-top: 0;
 }
 
 .second_heading 
@@ -124,7 +127,7 @@
   height: 27px;
   font: 36px/1.17 'Open Sans';
   color: #333333;
-  margin-bottom: 31px;
+  margin-bottom: 5px;
 }
 
 .second_phrase
@@ -134,7 +137,9 @@
   font: 19px/1.68 Georgia;
   text-align: left;
   color: #555555;
-  margin-bottom: 25px;
+  margin-top: 0;
+  margin-bottom: 63px;
+  white-space: pre-line;
 }
 
 .green_write 
