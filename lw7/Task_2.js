@@ -1,4 +1,6 @@
+'use strict';
 let l = 0;
+
 function findNum(n, s) {
   let num = '';
   //
@@ -23,6 +25,7 @@ function findNum(n, s) {
   }
   return num;
 }
+
 function findBrackets(n, s) {
   let brackestResult;
   //
@@ -35,6 +38,7 @@ function findBrackets(n, s) {
   }
   return brackestResult;
 }
+
 function findSigh(n, s) {
   let sigh;
   //
@@ -53,6 +57,7 @@ function findSigh(n, s) {
   }
   return sigh;
 }
+
 function answ(n, s) {
   let a, b;
   let sigh;
@@ -169,8 +174,10 @@ function answ(n, s) {
   }
   return a;
 }
+
 function calc(str) {
   let n = str.length;
   console.log( answ(n, str) );
 }
+
 calc("- (* 2 3) 8")
