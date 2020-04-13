@@ -52,7 +52,7 @@
   color: #15a98c;
   width: 330px;
   margin-right: 60px;
-  margin-bottom: 0px
+  margin-bottom: 0px;
 }
 
 .list
@@ -60,7 +60,8 @@
   font: 19px/1.89 Georgia;
   padding-left: 20px;
   color: #555555;
-  margin-bottom: 40px; 
+  margin-bottom: 40px;
+  margin-top: 17px;
 }
 
 .quotes_image
@@ -111,15 +112,15 @@
   margin-bottom: 17px;
 }
 
-.first_phrase
+.phrase
 {
-  width: 508px;
+  width: 555px;
   height: 178px;
   font: 19px/1.68 Georgia;
   color: #555555;
-  margin-bottom: 80px;
   white-space: pre-line;
   margin-top: 0;
+  margin-bottom: 60px;
 }
 
 .second_heading 
@@ -127,19 +128,8 @@
   height: 27px;
   font: 36px/1.17 'Open Sans';
   color: #333333;
-  margin-bottom: 5px;
-}
-
-.second_phrase
-{
-  width: 555px;
-  height: 178px;
-  font: 19px/1.68 Georgia;
-  text-align: left;
-  color: #555555;
-  margin-top: 0;
-  margin-bottom: 63px;
-  white-space: pre-line;
+  margin-bottom: 0px;
+  margin-top: 80px;
 }
 
 .green_write 
@@ -149,6 +139,7 @@
   font: 19px/1.68 Georgia;
   color: #15a98b;
   margin-bottom: 134px;
+  margin-top: 0;
   display: inline-block;
   text-decoration: none;
 }
