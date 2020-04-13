@@ -3,7 +3,7 @@ let l = 0;
 
 function findNum(n, s) {
   let num = '';
-  //
+  
   while (l < n) {
     if (
       s[l] === '0' ||
@@ -28,7 +28,7 @@ function findNum(n, s) {
 
 function findBrackets(n, s) {
   let brackestResult;
-  //
+  
   while (l < n) {
     brackestResult = answ(n, s);
     if (s[l] === ')') {
@@ -41,7 +41,7 @@ function findBrackets(n, s) {
 
 function findSigh(n, s) {
   let sigh;
-  //
+  
   while (l < n) {
     if (
       s[l] === '*' ||
@@ -61,7 +61,7 @@ function findSigh(n, s) {
 function answ(n, s) {
   let a, b;
   let sigh;
-  //
+  
   while (l < n) {
     sigh = findSigh(n, s);
     //*********************************************************

@@ -1,7 +1,7 @@
 function isPrimeNumber(n) {
   let isPrime;
   let exit = false;
-  //
+  
   if (typeof n === 'number') {
     n = [n];
   } else {
@@ -12,7 +12,7 @@ function isPrimeNumber(n) {
       }
     }
   }
-  //
+  
   if (!exit) { 
     for (let i in n) {
       isPrime = true;
