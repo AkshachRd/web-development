@@ -1,7 +1,4 @@
-'use strict';
-let l = 0;
-
-function findNum(n, s) {
+function findNum(l, n, s) {
   let num = '';
   
   while (l < n) {
@@ -23,24 +20,31 @@ function findNum(n, s) {
     }
     l++;
   }
-  return num;
+  return [l, num];
 }
 
-function findBrackets(n, s) {
+function findBrackets(l, n, s) {
   let brackestResult;
+  let lAndVar;
   
   while (l < n) {
-    brackestResult = answ(n, s);
+    lAndVar = answ(l, n, s);
+    l = lAndVar[0];
+    brackestResult = lAndVar[1];
     if (s[l] === ')') {
       break;
     }
     l++;
   }
-  return brackestResult;
+  if (l === n) {
+    console.log('Error: closing bracket wasn\'t found');
+  }
+  return [l, brackestResult];
 }
 
-function findSigh(n, s) {
+function findSigh(l, n, s) {
   let sigh;
+  let lAndVar;
   
   while (l < n) {
     if (
@@ -55,20 +59,25 @@ function findSigh(n, s) {
     }
     l++;
   }
-  return sigh;
+  return [l, sigh];
 }
 
-function answ(n, s) {
+function answ(l, n, s) {
   let a, b;
   let sigh;
+  let lAndVar;
   
   while (l < n) {
-    sigh = findSigh(n, s);
+    lAndVar = findSigh(l, n, s);
+    l = lAndVar[0];
+    sigh = lAndVar[1];
     //*********************************************************
     if (sigh === '*') {
       while (l < n) {
         if (s[l] === '('){
-          a = findBrackets(n, s);
+          lAndVar = findBrackets(l, n, s);
+          l = lAndVar[0];
+          a = lAndVar[1];
           break;
         } else if (
           s[l] === '0' ||
@@ -82,19 +91,25 @@ function answ(n, s) {
           s[l] === '8' ||
           s[l] === '9'
         ) {
-          a = findNum(n, s);
+          lAndVar = findNum(l, n, s);
+          l = lAndVar[0];
+          a = lAndVar[1];
           break;
         }
         l++;
       }
-      b = findNum(n, s);
-      a = b * a; 
+      lAndVar = findNum(l, n, s);
+      l = lAndVar[0];
+      b = lAndVar[1];
+      a = b * a;
     }
     ///////////////////////////////////////////////////////////
     if (sigh === '/') {
       while (l < n) {
         if (s[l] === '('){
-          a = findBrackets(n, s);
+          lAndVar = findBrackets(l, n, s);
+          l = lAndVar[0];
+          a = lAndVar[1];
           break;
         } else if (
           s[l] === '0' ||
@@ -108,19 +123,25 @@ function answ(n, s) {
           s[l] === '8' ||
           s[l] === '9'
         ) {
-          a = findNum(n, s);
+          lAndVar = findNum(l, n, s);
+          l = lAndVar[0];
+          a = lAndVar[1];
           break;
         }
         l++;
       }
-      b = findNum(n, s);
-      a = b / a;    
+      lAndVar = findNum(l, n, s);
+      l = lAndVar[0];
+      b = lAndVar[1];
+      a = a / b;    
     }
     //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     if (sigh === '+') {
       while (l < n) {
         if (s[l] === '('){
-          a = findBrackets(n, s);
+          lAndVar = findBrackets(l, n, s);
+          l = lAndVar[0];
+          a = lAndVar[1];
           break;
         } else if (
           s[l] === '0' ||
@@ -134,19 +155,25 @@ function answ(n, s) {
           s[l] === '8' ||
           s[l] === '9'
         ) {
-          a = findNum(n, s);
+          lAndVar = findNum(l, n, s);
+          l = lAndVar[0];
+          a = lAndVar[1];
           break;
         }
         l++;
       }
-      b = findNum(n, s);
+      lAndVar = findNum(l, n, s);
+      l = lAndVar[0];
+      b = lAndVar[1];
       a = Number(b) + Number(a);     
     }
     //---------------------------------------------------------
     if (sigh === '-') {
       while (l < n) {
         if (s[l] === '('){
-          a = findBrackets(n, s);
+          lAndVar = findBrackets(l, n, s);
+          l = lAndVar[0];
+          a = lAndVar[1];
           break;
         } else if (
           s[l] === '0' ||
@@ -160,24 +187,29 @@ function answ(n, s) {
           s[l] === '8' ||
           s[l] === '9'
         ) {
-          a = findNum(n, s);
+          lAndVar = findNum(l, n, s);
+          l = lAndVar[0];
+          a = lAndVar[1];
           break;
         }
         l++;
       }
-      b = findNum(n, s);
-      a = b - a;    
+      lAndVar = findNum(l, n, s);
+      l = lAndVar[0];
+      b = lAndVar[1];
+      a = a - b;    
     } else if (a !== undefined) {
       break;
     }
     l++;
   }
-  return a;
+  return [l, a];
 }
 
 function calc(str) {
   let n = str.length;
-  console.log( answ(n, str) );
+  let l = 0;
+  
+  console.log( answ(l, n, str)[1] );
+  return null;
 }
-
-calc("- (* 2 3) 8")

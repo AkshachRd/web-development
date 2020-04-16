@@ -16,11 +16,15 @@ function isPrimeNumber(n) {
   if (!exit) { 
     for (let i in n) {
       isPrime = true;
-      for (let j = 2; j < n[i]; j++) {
-        if (n[i] % j == 0) {
-          isPrime = false;
-          break;
-        }
+      if (n[i] > 1) {
+        for (let j = 2; j < n[i]; j++) {
+          if (n[i] % j == 0) {
+            isPrime = false;
+            break;
+          }
+        }  
+      } else {
+        isPrime = false;
       }
       if (isPrime) {
         console.log(n[i] + ' is prime number');
@@ -30,4 +34,3 @@ function isPrimeNumber(n) {
     }
   }
 }
-isPrimeNumber(5);
