@@ -165,7 +165,6 @@ function calc(str) {
   let lAndVar;
   let error = false;
   
-  //console.log( answ(l, n, str)[1] );
   lAndVar = answ(l, n, str, error);
   error = lAndVar[2];
   if (!error) {
