@@ -168,6 +168,6 @@ function calc(str) {
   lAndVar = answ(l, n, str, error);
   error = lAndVar[2];
   if (!error) {
-    return lAndVar[1];;
+    return lAndVar[1];
   }
 }
