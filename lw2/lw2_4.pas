@@ -12,7 +12,7 @@ BEGIN
   N := POS(Key, Query) + LENGTH(Key) + 1;
   FOR I := N TO LENGTH(Query)
   DO
-    IF Query[I] = '='
+    IF Query[I] = '&'
     THEN
       BREAK
     ELSE
