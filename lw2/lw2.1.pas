@@ -1,6 +1,6 @@
 PROGRAM Print(INPUT, OUTPUT);
 USES
-  Dos;
+  DOS;
 BEGIN
   WRITELN('Content-Type: text/plane');
   WRITELN;
