@@ -1,7 +1,7 @@
-
 PROGRAM WorkWithQueryString(INPUT, OUTPUT);
 USES
   DOS;
+
 FUNCTION GetQueryStringParameter(Key: STRING): STRING;
 VAR
   I, N: INTEGER;
