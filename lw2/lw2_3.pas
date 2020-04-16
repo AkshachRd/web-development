@@ -2,27 +2,27 @@ PROGRAM Hello(INPUT, OUTPUT);
 USES
   DOS;
 VAR
-  nameinput, name: STRING;
+  NameInput, Name: STRING;
   I, J: INTEGER;
 BEGIN
-  name := '';
+  Name := '';
   WRITELN('Content-Type: text/plain');
   WRITELN;
-  nameinput := GetEnv('QUERY_STRING');
-  WHILE (nameinput[I] <> '&') OR (I <> LENGTH(nameinput)) 
+  NameInput := GetEnv('QUERY_STRING');
+  WHILE (NameInput[I] <> '&') OR (I <> LENGTH(NameInput)) 
   DO
     BEGIN
-      IF POS('name=', nameinput) <> 0
+      IF POS('name=', NameInput) <> 0
       THEN
-        I := POS('name=', nameinput) + 5; 
+        I := POS('name=', NameInput) + 5; 
       I := I + 1
     END;
-  FOR I := 6 TO LENGTH(nameinput)
+  FOR I := 6 TO LENGTH(NameInput)
   DO
-    name := name + nameinput[I];
+    Name := Name + NameInput[I];
   IF name <> ''
   THEN
-    WRITELN('Hello dear, ', name, '!')
+    WRITELN('Hello dear, ', Name, '!')
   ELSE
     WRITELN('Hello Anonymous!')
 END.
