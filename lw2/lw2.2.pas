@@ -18,13 +18,16 @@ BEGIN {PaulRevere}
     END;
   IF (Lanterns > '0') AND (Lanterns < '3')
   THEN
-    WRITE('The British are coming by ');
-    IF Lanterns = '1'
-    THEN
-      WRITELN('land.')
-    ELSE IF Lanterns = '2'
-    THEN
-      WRITELN('sea.')
+    BEGIN
+      WRITE('The British are coming by ');
+      IF Lanterns = '1'
+      THEN
+        WRITELN('land.')
+      ELSE 
+        IF Lanterns = '2'
+        THEN
+          WRITELN('sea.')
+    END
   ELSE
     WRITELN('The North Church shows only ''', Lanterns, '''.')
 END. {PaulRevere}
