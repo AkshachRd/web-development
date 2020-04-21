@@ -29,7 +29,11 @@ function isPrimeNumber(n) {
       if (isPrime) {
         console.log(n[i] + ' is prime number');
       } else {
-        console.log(n[i] + ' is not prime number');
+        if (n[i] === 0 || n[i] === 1) {
+          console.log(n[i] + ' is neither a prime nor a composite number');
+        } else {
+          console.log(n[i] + ' is not prime number');
+        }
       }
     }
   }
