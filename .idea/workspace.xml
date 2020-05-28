@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b45ac07-0562-486e-b0e3-b17881736c5a" name="Default Changelist" comment="The bugs were fixed">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3b45ac07-0562-486e-b0e3-b17881736c5a" name="Default Changelist" comment="The bugs were fixed" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,7 +25,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="G:/Frontend/php.exe" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/lw6" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -48,6 +46,7 @@
       <updated>1583339776766</updated>
       <workItem from="1583339777941" duration="10102000" />
       <workItem from="1583673541831" duration="1938000" />
+      <workItem from="1590642714434" duration="40000" />
     </task>
     <task id="LOCAL-00001" summary="Boolean variables were aligned to PHP code style">
       <created>1583674723080</created>
@@ -91,10 +90,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="618" y="134" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1583675119882" />
-    <state x="730" y="278" key="FileChooserDialogImpl" timestamp="1583352919157">
+    <state x="730" y="278" key="FileChooserDialogImpl" timestamp="1590642748106">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="730" y="278" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1583352919157" />
+    <state x="730" y="278" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1590642748106" />
     <state x="784" y="447" key="NewPhpFileDialog" timestamp="1583357604791">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -107,10 +106,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="272" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1583675501241" />
-    <state x="689" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1583673546310">
+    <state x="689" y="363" key="com.intellij.ide.util.TipDialog" timestamp="1590642717278">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="689" y="363" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1583673546310" />
+    <state x="689" y="363" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1440.860@0.0.1920.1040" timestamp="1590642717278" />
     <state x="802" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583355964936">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
