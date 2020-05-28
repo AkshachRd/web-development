@@ -152,11 +152,11 @@
 #favourite_films_background
 {
   display: table;
-  width: 1920px;
+  width: 1647px;
   height: 1041px;
   direction: ltr;
   background: #F9F9F9;
-  padding-left: 251px;
+  padding-left: 210px;
   vertical-align: top;
 }
 
@@ -237,10 +237,18 @@
   position: relative;
   bottom: 849px;
   display: inline-block;
-  padding-left: 1235px;
+  margin-left: 1343px;
 }
 
-.arrows_background
+#left_arrow_background
+{
+  width: 70px;
+  height: 70px;
+  background: #15A98C;
+  border-radius: 50%;
+}
+
+#right_arrow_background
 {
   width: 70px;
   height: 70px;
