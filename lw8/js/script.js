@@ -1,5 +1,10 @@
 const films = ["first_film", "second_film", "third_film", "fourth_film", "fifth_film", "sixth_film", "seventh_film", "eighth_film", "ninth_film", "tenth_film"]
 
+const left_arrow = document.getElementById('left_arrow');
+left_arrow.onclick = () => scrollFilmsToTheLeft(films);
+const right_arrow = document.getElementById('right_arrow_background');
+right_arrow.onclick = () => scrollFilmsToTheRight(films);
+
 function scrollFilmsToTheLeft(films) {
   let film_from, film_to;
 
@@ -25,8 +30,3 @@ function scrollFilmsToTheRight(films) {
   }
   document.getElementById("tenth_film").innerHTML = tmp;
 }
-
-const left_arrow = document.getElementById('left_arrow');
-left_arrow.onclick = () => scrollFilmsToTheLeft(films);
-const right_arrow = document.getElementById('right_arrow_background');
-right_arrow.onclick = () => scrollFilmsToTheRight(films);
