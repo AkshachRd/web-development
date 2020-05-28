@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700&display=swap&subset=cyrillic');
+
+.main
+{
+  margin-top: 100px;
+  margin-left: 450px;
+  margin-right: 454px;
+  display: block; 
+}
+
+.right_to_left
+{
+  direction: ltr;
+}
+
+.right_block_right_to_left
+{
+  display: inline-block;
+  float: right;
+}
+
+.left_block_right_to_left
+{
+  display: inline-block;
+}
+
+.left_to_right
+{
+  direction: ltr;
+}
+
+.photo
+{
+  display: inline-block;
+  float: left;
+  width: 330px;
+  height: 350px;
+  border-radius: 5px;
+  background-color: #132d36;
+  margin-bottom: 28px;
+  margin-right: 60px;
+}
+
+.right_block_left_to_right
+{
+  display: inline-block;
+}
+
+.list_start
+{
+  font: bold 24px/1.33 'Open Sans';
+  color: #15a98c;
+  width: 330px;
+  margin-right: 60px;
+  margin-bottom: 0px;
+}
+
+.list
+{
+  font: 19px/1.89 Georgia;
+  padding-left: 20px;
+  color: #555555;
+  margin-bottom: 40px;
+  margin-top: 17px;
+}
+
+.quotes_image
+{
+  padding-top: 50px;
+}
+
+.quote
+{
+  width: 444px;
+  font: italic 28px/1.5 Georgia;
+  text-align: left;
+  color: #848484;
+  position: relative;
+  bottom: 22px;
+  margin-top: 0;
+  margin-left: 58px;
+  margin-bottom: 27px; 
+}
+
+.quote_author
+{
+  height: 17px;
+  font: bold 16px/2.63 'Open Sans';
+  color: #333333;
+  margin-left: 63px;
+  position: relative;
+  bottom: 49px;
+  margin-bottom: 110px;
+}
+
+.first_heading
+{
+  width: 214px;
+  height: 44px;
+  font: bold 48px/0.88 'Open Sans';
+  color: #333333;
+  margin-top: 23px;
+}
+
+.green_line
+{
+  width: 60px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #45c3aa;
+  margin-top: 24px;
+  margin-bottom: 17px;
+}
+
+.phrase
+{
+  width: 555px;
+  height: 178px;
+  font: 19px/1.68 Georgia;
+  color: #555555;
+  white-space: pre-line;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+.second_heading 
+{
+  height: 27px;
+  font: 36px/1.17 'Open Sans';
+  color: #333333;
+  margin-bottom: 0px;
+  margin-top: 80px;
+}
+
+.green_write 
+{
+  width: 139px;
+  height: 18px;
+  font: 19px/1.68 Georgia;
+  color: #15a98b;
+  margin-bottom: 80px;
+  margin-top: 0;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.green_underline
+{
+  border-bottom: solid 1px #15a98b;
+}
+
+#favourite_films_background
+{
+  display: table;
+  width: 1920px;
+  height: 1041px;
+  background: #F9F9F9;
+  padding-left: 360px;
+}
+
+#favourite_films_heading
+{
+  font: 36px/1.17 'Open Sans';
+  color: #333333;
+  margin-bottom: 16px;
+}
+
+.film_image
+{
+  width: 100%;
+  border-radius: 5px;
+  vertical-align: bottom;
+}
+
+.film_image_background
+{
+  display: table;
+  width: 284px;
+  height: 190px;
+  background: #464646;
+  border-radius: 5px;
+  line-height: 190px;
+}
+
+.film_title
+{
+  width: 284px;
+  font: bold 22px/1.89 'Open Sans';
+  color: #333333;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.film_description
+{
+  width: 284px;
+  font: 16px/1.68 Georgia;
+  color: #555555;
+  position: relative;
+  bottom: 30px;
+  margin-top: 0;
+}
+
+#favourite_films
+{
+  width: 1199px;
+  direction: ltr;
+  overflow: hidden;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.film
+{
+  display: inline-block;
+  padding-right: 15px;
+  vertical-align: top;
+  white-space: pre-line;
+}
+
+#favourite_films_and_arrows
+{
+  direction: ltr;
+}
+
+#favourite_films_and_heading
+{
+  display: inline-block;
+}
+
+#left_arrow
+{
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background: #15A98C;
+  border-radius: 50%;
+}
+
+#right_arrow
+{
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background: #15A98C;
+  border-radius: 50%;
+}
