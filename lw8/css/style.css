@@ -154,8 +154,10 @@
   display: table;
   width: 1920px;
   height: 1041px;
+  direction: ltr;
   background: #F9F9F9;
-  padding-left: 360px;
+  padding-left: 251px;
+  vertical-align: top;
 }
 
 #favourite_films_heading
@@ -206,7 +208,6 @@
   width: 1199px;
   direction: ltr;
   overflow: hidden;
-  vertical-align: top;
   white-space: nowrap;
 }
 
@@ -218,11 +219,6 @@
   white-space: pre-line;
 }
 
-#favourite_films_and_arrows
-{
-  direction: ltr;
-}
-
 #favourite_films_and_heading
 {
   display: inline-block;
@@ -231,17 +227,55 @@
 #left_arrow
 {
   display: inline-block;
+  padding-right: 40px;
+  padding-top: 170px;
+  vertical-align: top;
+}
+
+#right_arrow
+{
+  position: relative;
+  bottom: 849px;
+  display: inline-block;
+  padding-left: 1235px;
+}
+
+.arrows_background
+{
   width: 70px;
   height: 70px;
   background: #15A98C;
   border-radius: 50%;
 }
 
-#right_arrow
+#left_arrow_first_line
 {
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-  background: #15A98C;
-  border-radius: 50%;
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 18px;
+  transform: rotate(-45deg);
+}
+
+#left_arrow_second_line
+{
+  position: absolute;
+  margin-top: 42px;
+  margin-left: 18px;
+  transform: rotate(-135deg);
+}
+
+#right_arrow_first_line
+{
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 25px;
+  transform: rotate(45deg);
+}
+
+#right_arrow_second_line
+{
+  position: absolute;
+  margin-top: 42px;
+  margin-left: 25px;
+  transform: rotate(135deg);
 }
