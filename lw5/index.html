@@ -1,63 +1,89 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Моя строничкабъ</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Моя строничкабъ</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-  <div class="main">
-    <div  class="left_to_right">
-      <img class="photo" src="images/photo.png" alt="Здесь должно быть фото женщины">
-      <div class="right_block_left_to_right">
-        <img class="quotes_image" src="images/quote.png" alt="Здесь должны быть кавычки">
-        <p class="quote">Мы берем на себя много, потому что мало чего боимся</p>
-        <p class="quote_author">— Том Демарко. Deadline</p>
-      </div>
+    <div class="main">
+        <div class="header-section">
+            <img src="images/logo_header.svg" alt="Logo"> <!-- div -->
+            <div class="nav-bar">
+                <p>Что будет на курсе?</p>
+                <p>Вопросы</p>
+                <p>Автор</p>
+            </div>
+            <input type="button" class="sign-up-button" value="Записаться на курс">
+        </div>
+
+        <div class="welcome-section">
+            <h1 class="welcome-header">Не <span class="heading-highlight">делай</span> этого</h1>
+            <p class="welcome-desc">Онлайн-курс для творческих людей, о том, как управлять своим временем</p>
+            <input type="button" class="sign-up-button" value="Записаться на курс" style="width: 332px; height: 55px;">
+            <div class="welcome-img">
+                <img src="images/done.png" alt="Done">
+            </div>
+        </div>
+
+        
+        <div class="benefits-block">
+            <div class="benefits-card">
+                <img src="./images/time.svg" alt="Clock" class="benefits-card-img">
+                <p class="benefits-card-text">Для тех, у кого слишком много идей и слишком мало времени</p>
+            </div>
+            <div class="benefits-card">
+                <img src="./images/notebook.svg" alt="Notebook" class="benefits-card-img">
+                <p class="benefits-card-text">Метод «списка не дел», который позволит успевать и реализовывать</p>
+            </div>
+            <div class="benefits-card">
+                <img src="./images/target.svg" alt="Target" class="benefits-card-img">
+                <p class="benefits-card-text">Курс научит творческих людей сосредоточиваться</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <img src="./images/finances.png" alt="Finances">
+            <h2 class="content-header">Ты не успеешь</h2>
+            <p class="content-desc">Всех творческих людей объединяет одна проблема - отсутствие времени на реализацию
+                идей. Как прибавить суткам часы, рассмотрим в нашем курсе.</p>
+            <h2 class="content-header">Опять дедлайн</h2>
+            <p class="content-desc">В мире, где столько всего интересного, когда же успевать жить?</p>
+            <img src="./images/mind_blowing.png" alt="Mind Blowing">
+
+            <h2 class="content-header">На курсе ты <span class="heading-highlight">сможешь</span></h2>
+            <div class="content-table">
+                <div class="content-table-card">
+                    <img src="./images/hand_1.svg" alt="One" class="content-table-card-img">
+                    <p class="content-table-card-text">Понять, что нужно делать, а что делать не стоит.</p>
+                </div>
+                <div class="content-table-card">
+                    <img src="./images/hand_2.svg" alt="Two" class="content-table-card-img">
+                    <p class="content-table-card-text">Перестать себя искусственно ограничивать.</p>
+                </div>
+                <div class="content-table-card">
+                    <img src="./images/hand_3.svg" alt="Three" class="content-table-card-img">
+                    <p class="content-table-card-text">Определить сильные стороны
+                        и начать использовать слабые.</p>
+                </div>
+                <div class="content-table-card">
+                    <img src="./images/hand_4.svg" alt="Four" class="content-table-card-img">
+                    <p class="content-table-card-text">Научиться достигать любой цели в 3 понятных шага.</p>
+                </div>
+                <div class="content-table-card">
+                    <img src="./images/hand_5.svg" alt="Five" class="content-table-card-img">
+                    <p class="content-table-card-text">Сотрудничать эффективно и с правильными людьми.</p>
+                </div>
+                <div class="content-table-card">
+                    <img src="./images/hand_6.svg" alt="Six" class="content-table-card-img">
+                    <p class="content-table-card-text">Оптимизировать общение с клиентами и проведение совещаний.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-section">
+            <img src="images/logo_bottom.svg" alt="Logo">
+        </div>
     </div>
-    <div class="right_to_left">
-      <div class="right_block_right_to_left">
-        <h1 class="first_heading">Jane Doe</h1>
-        <p class="green_line"></p>
-        <p class="phrase">
-          В 1930-е годы прошлого века физик Джордж Гамоу из 
-          университета штата Колорадо начал публиковать
-          мини-сериал рассказов о неком мистере Томпкинсе,
-          банковском клерке средних лет. Мистер Томпкинс, как
-          явствовало из этих историй, интересовался современной наукой.
-        </p>
-        <h2 class="second_heading">Мое хобби</h2>
-        <p class="phrase">
-          Он регулярно посещал вечерние лекции местного профессора
-          и, разумеется,всегда засыпал на самом интересном месте. 
-          А когда просыпался, то обнаруживал себя в каком-нибудь
-          параллельном мире, где один из основных законов физики
-          действовал не так, как в его мире.
-        </p>
-        <a class="green_write" href="https://twitter.com/Ponasenkov?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
-          <span class="green_underline">
-            Напиши мне
-          </span>
-          →
-        </a>
-      </div>
-      <div class="left_block_right_to_left">
-        <h3 class="list_start">Любимые писатели:</h3>
-        <ul class="list">
-          <li>Айзек Азимов</li>
-          <li>Говард Лавкрафт</li>
-          <li>Дмитрий Глуховский</li>
-          <li>Чак Паланик</li>
-        </ul>
-        <h3 class="list_start">Любимые фильмы:</h3>
-        <ol class="list">
-          <li>Шоу Трумэна</li>
-          <li>Малхолланд Драйв</li>
-          <li>Семь жизней</li>
-          <li>Гравитация</li>
-        </ol>
-      </div>
-    </div>
-  </div>
 </body>
 </html>
