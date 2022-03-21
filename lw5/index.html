@@ -2,43 +2,55 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Моя строничкабъ</title>
+    <title>За Русь!</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     <div class="main">
-        <div class="header-section">
-            <img src="images/logo_header.svg" alt="Logo"> <!-- div -->
-            <div class="nav-bar">
-                <p>Что будет на курсе?</p>
-                <p>Вопросы</p>
-                <p>Автор</p>
+        <div class="header">
+            <div class="header__logo">
+                <img src="images/logo_header.svg" alt="Logo">
             </div>
-            <input type="button" class="sign-up-button" value="Записаться на курс">
+            <div class="header__nav">
+                <div class="header__nav-bar">
+                    <button class="header__button">Что будет на курсе?</button>
+                    <button class="header__button">Вопросы</button>
+                    <button class="header__button">Автор</button>
+                </div>
+                <button class="sign-up-button">Записаться на курс</button>
+            </div>
         </div>
 
-        <div class="welcome-section">
-            <h1 class="welcome-header">Не <span class="heading-highlight">делай</span> этого</h1>
-            <p class="welcome-desc">Онлайн-курс для творческих людей, о том, как управлять своим временем</p>
-            <input type="button" class="sign-up-button" value="Записаться на курс" style="width: 332px; height: 55px;">
-            <div class="welcome-img">
+        <div class="intro">
+            <div class="intro__card">
+                <h1 class="intro__title">Не <span class="heading-highlight">делай</span> это</h1>
+                <p class="intro__text">Онлайн-курс для творческих людей, о том, как управлять своим временем</p>
+                <button class="sign-up-button sign-up-button_long">Записаться на курс</button>
+            </div>
+            <div class="intro__img">
                 <img src="images/done.png" alt="Done">
             </div>
         </div>
 
         
-        <div class="benefits-block">
+        <div class="benefits">
             <div class="benefits-card">
-                <img src="./images/time.svg" alt="Clock" class="benefits-card-img">
-                <p class="benefits-card-text">Для тех, у кого слишком много идей и слишком мало времени</p>
+                <div class="benefits-card__img">
+                    <img src="./images/time.svg" alt="Clock">
+                </div>
+                <p class="benefits-card__text">Для тех, у кого слишком много идей и слишком мало времени</p>
             </div>
             <div class="benefits-card">
-                <img src="./images/notebook.svg" alt="Notebook" class="benefits-card-img">
-                <p class="benefits-card-text">Метод «списка не дел», который позволит успевать и реализовывать</p>
+                <div class="benefits-card__img">
+                    <img src="./images/notebook.svg" alt="Notebook">
+                </div>
+                <p class="benefits-card__text">Метод «списка не дел», который позволит успевать и реализовывать</p>
             </div>
             <div class="benefits-card">
-                <img src="./images/target.svg" alt="Target" class="benefits-card-img">
-                <p class="benefits-card-text">Курс научит творческих людей сосредоточиваться</p>
+                <div class="benefits-card__img">
+                    <img src="./images/target.svg" alt="Target">
+                </div>
+                <p class="benefits-card__text">Курс научит творческих людей сосредоточиваться</p>
             </div>
         </div>
 
@@ -55,34 +67,36 @@
             <div class="content-table">
                 <div class="content-table-card">
                     <img src="./images/hand_1.svg" alt="One" class="content-table-card-img">
-                    <p class="content-table-card-text">Понять, что нужно делать, а что делать не стоит.</p>
+                    <p class="content-table-card__text">Понять, что нужно делать, а что делать не стоит.</p>
                 </div>
                 <div class="content-table-card">
                     <img src="./images/hand_2.svg" alt="Two" class="content-table-card-img">
-                    <p class="content-table-card-text">Перестать себя искусственно ограничивать.</p>
+                    <p class="content-table-card__text">Перестать себя искусственно ограничивать.</p>
                 </div>
                 <div class="content-table-card">
                     <img src="./images/hand_3.svg" alt="Three" class="content-table-card-img">
-                    <p class="content-table-card-text">Определить сильные стороны
+                    <p class="content-table-card__text">Определить сильные стороны
                         и начать использовать слабые.</p>
                 </div>
                 <div class="content-table-card">
                     <img src="./images/hand_4.svg" alt="Four" class="content-table-card-img">
-                    <p class="content-table-card-text">Научиться достигать любой цели в 3 понятных шага.</p>
+                    <p class="content-table-card__text">Научиться достигать любой цели в 3 понятных шага.</p>
                 </div>
                 <div class="content-table-card">
                     <img src="./images/hand_5.svg" alt="Five" class="content-table-card-img">
-                    <p class="content-table-card-text">Сотрудничать эффективно и с правильными людьми.</p>
+                    <p class="content-table-card__text">Сотрудничать эффективно и с правильными людьми.</p>
                 </div>
                 <div class="content-table-card">
                     <img src="./images/hand_6.svg" alt="Six" class="content-table-card-img">
-                    <p class="content-table-card-text">Оптимизировать общение с клиентами и проведение совещаний.</p>
+                    <p class="content-table-card__text content-table-card__text_long">Оптимизировать общение с клиентами и проведение совещаний.</p>
                 </div>
             </div>
         </div>
 
-        <div class="bottom-section">
-            <img src="images/logo_bottom.svg" alt="Logo">
+        <div class="footer">
+            <div class="footer__logo">
+                <img src="images/logo_bottom.svg" alt="Logo">
+            </div>
         </div>
     </div>
 </body>

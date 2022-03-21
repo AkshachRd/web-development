@@ -4,6 +4,7 @@ body
 {
     display: block;
     margin: 0;
+    width: 1920px;
 }
 
 .heading-highlight
@@ -11,8 +12,45 @@ body
     color: #ee58b6;
 }
 
-.nav-bar
+.header
 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 120px 0 120px;
+}
+
+.header__logo
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__nav
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.header__nav-bar
+{
+    margin-right: 99px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.header__button
+{
+    background-color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 87px;
+    padding: 0;
+
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -36,35 +74,60 @@ body
     width: 247px;
     height: 55px;
     border-radius: 5px;
+    padding: 0;
 }
 
-.welcome-header
+.sign-up-button_long
+{
+    width: 332px;
+}
+
+.intro
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 73px 0 0 175px;
+}
+
+.intro__title
 {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 100px;
-    line-height: 122.35%;
+    line-height: 122px;
+    width: 745px;
+    height: 138px;
+    margin: 0;
 }
 
-.welcome-desc
+.intro__text
 {
     font-family: 'Roboto Condensed', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
     line-height: 120%;
+    width: 545px;
     color: rgba(0, 0, 0, 0.7);
+    margin: 5px 0 46px 0;
 }
 
-.welcome-img
+.intro__img
 {
-    width: 849px;
+    /*width: 849px;
     height: 849px;
+    margin-left: 30px;*/
+    object-fit: cover;
+    width: 100%;
 }
 
-.benefits-block
+.benefits
 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     background-color: black;
     align-content: center;
 }
@@ -76,13 +139,13 @@ body
     width: 337px;
 }
 
-.benefits-card-img
+.benefits-card__img
 {
     object-fit: none;
     align-self: center;
 }
 
-.benefits-card-text
+.benefits-card__text
 {
     font-family: 'Roboto Condensed', sans-serif;
     font-style: normal;
@@ -126,7 +189,7 @@ body
     justify-content: space-between;
 }
 
-.content-table-card-text
+.content-table-card__text
 {
     font-family: 'Roboto Condensed', sans-serif;
     font-style: normal;
@@ -136,13 +199,18 @@ body
     color: white;
 }
 
+.content-table-card__text_long
+{
+    width: 287px;
+}
+
 .content-table-card-img
 {
     object-fit: none;
     align-self: start;
 }
 
-.bottom-section
+.footer
 {
     vertical-align: middle;
     align-items: center;
