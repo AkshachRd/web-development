@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b45ac07-0562-486e-b0e3-b17881736c5a" name="Default Changelist" comment="Свёрстана страница новой lw5. Старая версия помещена в lw5\legacy">
+    <list default="true" id="3b45ac07-0562-486e-b0e3-b17881736c5a" name="Default Changelist" comment="Разработана полная вёрстка страницы. Добевлен БЭМ нейминг классов. Добавлен reset CSS-файл для сброса стилей.">
+      <change afterPath="$PROJECT_DIR$/lw5/css/reset.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lw5/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/lw5/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lw5/images/finances.png" beforeDir="false" afterPath="$PROJECT_DIR$/lw5/images/finances.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lw5/images/mind_blowing.png" beforeDir="false" afterPath="$PROJECT_DIR$/lw5/images/mind_blowing.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lw5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lw5/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +37,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="2" />
+  </component>
   <component name="ProjectId" id="1YfhuGZulpjQ8B7D0uY5ptzRUml" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -37,7 +49,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/lw6" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -49,6 +61,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\web-development\lw5\images" />
       <recent name="D:\web-development\lw5\images" />
       <recent name="D:\web-development\lw5\legacy" />
     </key>
@@ -70,6 +83,8 @@
       <workItem from="1647487045905" duration="23922000" />
       <workItem from="1647884512319" duration="113000" />
       <workItem from="1647884634756" duration="133000" />
+      <workItem from="1647885625513" duration="9282000" />
+      <workItem from="1648070266915" duration="7824000" />
     </task>
     <task id="LOCAL-00001" summary="Boolean variables were aligned to PHP code style">
       <created>1583674723080</created>
@@ -108,11 +123,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Boolean variables were aligned to PHP code style" />
     <MESSAGE value="The bugs were fixed" />
     <MESSAGE value="Свёрстана страница новой lw5. Старая версия помещена в lw5\legacy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Свёрстана страница новой lw5. Старая версия помещена в lw5\legacy" />
+    <MESSAGE value="Разработана полная вёрстка страницы. Добевлен БЭМ нейминг классов. Добавлен reset CSS-файл для сброса стилей." />
+    <option name="LAST_COMMIT_MESSAGE" value="Разработана полная вёрстка страницы. Добевлен БЭМ нейминг классов. Добавлен reset CSS-файл для сброса стилей." />
   </component>
 </project>
