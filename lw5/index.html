@@ -12,11 +12,11 @@
             <div class="header__logo">
                 <img draggable="false" src="images/logo_header.svg" alt="Logo">
             </div>
-            <div class="header__nav">
-                <div class="header__nav-bar">
-                    <button class="header__button">Что будет на курсе?</button>
-                    <button class="header__button">Вопросы</button>
-                    <button class="header__button">Автор</button>
+            <div class="nav">
+                <div class="nav__bar">
+                    <button class="nav__button">Что будет на курсе?</button>
+                    <button class="nav__button">Вопросы</button>
+                    <button class="nav__button">Автор</button>
                 </div>
                 <button class="sign-up-button">Записаться на курс</button>
             </div>
@@ -24,9 +24,9 @@
     </div>
 
     <div class="hero">
-        <div class="hero__content">
-            <h1 class="title__hero">Не <span class="title__highlighter">делай</span> это</h1>
-            <p class="hero__text">Онлайн-курс для творческих людей, о том, как управлять своим временем</p>
+        <div class="hero__container">
+            <h1 class="hero__title title">Не <span class="title__highlighter">делай</span> это</h1>
+            <p class="hero__desc">Онлайн-курс для творческих людей, о том, как управлять своим временем</p>
             <button class="sign-up-button sign-up-button_long">Записаться на курс</button>
         </div>
         <div class="hero__img">
@@ -36,71 +36,89 @@
 
     <div class="benefits">
         <div class="benefits__container">
-            <div class="benefits__img">
-                <img draggable="false" src="./images/time.svg" alt="Clock">
+            <div class="benefits__card">
+                <div class="benefits__img">
+                    <img draggable="false" src="./images/time.svg" alt="Clock">
+                </div>
+                <p class="benefits__text">Для тех, у кого слишком много идей и слишком мало времени</p>
             </div>
-            <div class="benefits__img">
-                <img draggable="false" src="./images/notebook.svg" alt="Notebook">
+            <div class="benefits__card">
+                <div class="benefits__img">
+                    <img draggable="false" src="./images/notebook.svg" alt="Notebook">
+                </div>
+                <p class="benefits__text">Метод «списка не дел», который позволит успевать и реализовывать</p>
             </div>
-            <div class="benefits__img">
-                <img draggable="false" src="./images/target.svg" alt="Target">
+            <div class="benefits__card">
+                <div class="benefits__img">
+                    <img draggable="false" src="./images/target.svg" alt="Target">
+                </div>
+                <p class="benefits__text">Курс научит творческих людей сосредоточиваться</p>
             </div>
-
-            <p class="benefits__text">Для тех, у кого слишком много идей и слишком мало времени</p>
-            <p class="benefits__text">Метод «списка не дел», который позволит успевать и реализовывать</p>
-            <p class="benefits__text">Курс научит творческих людей сосредоточиваться</p>
         </div>
     </div>
 
     <div class="content">
-        <div class="content__card">
-            <div class="content__img content__img_first">
+        <div class="content-card">
+            <div class="content-card__img content-card__img_first">
                 <img draggable="false" src="./images/finances.png" alt="Finances">
             </div>
-            <div class="content__para">
-                <h2 class="title__content">Ты не успеешь</h2>
-                <p class="content__desc">Всех творческих людей объединяет одна проблема - отсутствие времени на реализацию
+            <div class="content-card__paragraph">
+                <h2 class="content-card__title title">Ты не успеешь</h2>
+                <p class="content-card__desc">Всех творческих людей объединяет одна проблема - отсутствие времени на реализацию
                     идей. Как прибавить суткам часы, рассмотрим в нашем курсе.</p>
             </div>
         </div>
-        <div class="content__card">
-            <div class="content__para">
-                <h2 class="title__content">Опять дедлайн</h2>
-                <p class="content__desc">В мире, где столько всего интересного, когда же успевать жить?</p>
+        <div class="content-card">
+            <div class="content-card__paragraph">
+                <h2 class="content-card__title title">Опять дедлайн</h2>
+                <p class="content-card__desc">В мире, где столько всего интересного, когда же успевать жить?</p>
             </div>
-            <div class="content__img content__img_second">
+            <div class="content-card__img content-card__img_second">
                 <img draggable="false" src="./images/mind_blowing.png" alt="Mind Blowing">
             </div>
         </div>
     </div>
 
     <div class="about">
-        <h2 class="title__content">На курсе ты <span class="title__highlighter">сможешь</span></h2>
-        <div class="about__table">
-            <div class="about__card">
-                <img draggable="false" src="./images/hand_1.svg" alt="One" class="about__img">
-                <p class="about__desc ">Понять, что нужно делать, а что делать не стоит.</p>
+        <h2 class="content-card__title title">На курсе ты <span class="title__highlighter">сможешь</span></h2>
+        <div class="about__container">
+            <div class="about-card">
+                <div class="about-card__img">
+                    <img draggable="false" src="./images/hand_1.svg" alt="One">
+                </div>
+                <p class="about-card__text ">Понять, что нужно делать, а что делать не стоит.</p>
             </div>
-            <div class="about__card">
-                <img draggable="false" src="./images/hand_2.svg" alt="Two" class="about__img">
-                <p class="about__desc">Перестать себя искусственно ограничивать.</p>
+            <div class="about-card">
+
+                <div class="about-card__img">
+                    <img draggable="false" src="./images/hand_2.svg" alt="Two">
+                </div>
+                <p class="about-card__text">Перестать себя искусственно ограничивать.</p>
             </div>
-            <div class="about__card">
-                <img draggable="false" src="./images/hand_3.svg" alt="Three" class="about__img">
-                <p class="about__desc about__desc_short">Определить сильные стороны
+            <div class="about-card">
+                <div class="about-card__img">
+                    <img draggable="false" src="./images/hand_3.svg" alt="Three">
+                </div>
+                <p class="about-card__text about__desc_short">Определить сильные стороны
                     и начать использовать слабые.</p>
             </div>
-            <div class="about__card">
-                <img draggable="false" src="./images/hand_4.svg" alt="Four" class="about__img">
-                <p class="about__desc">Научиться достигать любой цели в 3 понятных шага.</p>
+            <div class="about-card">
+                <div class="about-card__img">
+                    <img draggable="false" src="./images/hand_4.svg" alt="Four">
+                </div>
+                <p class="about-card__text">Научиться достигать любой цели в 3 понятных шага.</p>
             </div>
-            <div class="about__card">
-                <img draggable="false" src="./images/hand_5.svg" alt="Five" class="about__img">
-                <p class="about__desc about__desc_shortest">Сотрудничать эффективно и с правильными людьми.</p>
+            <div class="about-card">
+                <div class="about-card__img">
+                    <img draggable="false" src="./images/hand_5.svg" alt="Five">
+                </div>
+                <p class="about-card__text about__desc_shortest">Сотрудничать эффективно и с правильными людьми.</p>
             </div>
-            <div class="about__card">
-                <img draggable="false" src="./images/hand_6.svg" alt="Six" class="about__img">
-                <p class="about__desc about__desc_long">Оптимизировать общение с клиентами и проведение совещаний.</p>
+            <div class="about-card">
+                <div class="about-card__img">
+                    <img draggable="false" src="./images/hand_6.svg" alt="Six">
+                </div>
+                <p class="about-card__text about__desc_long">Оптимизировать общение с клиентами и проведение совещаний.</p>
             </div>
         </div>
     </div>
