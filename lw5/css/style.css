@@ -3,7 +3,7 @@
 body
 {
     display: block;
-    width: auto;
+    width: 1920px;
 }
 
 .title
@@ -21,16 +21,20 @@ body
 {
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(25px);
+
     display: flex;
     flex-direction: column;
     align-items: center;
+
     position: fixed;
     top: 0;
-    padding: 30px 120px;
+
     width: 100%;
     width: -moz-available;          /* WebKit-based browsers will ignore this. */
     width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
     width: fill-available;
+
+    padding: 30px 120px;
 }
 
 .header__container
@@ -59,44 +63,51 @@ body
 
 .nav__bar
 {
-    margin-right: 99px;
     text-align: center;
+
     display: flex;
     align-items: center;
+
+    margin-right: 99px;
 }
 
 .nav__button
 {
-    background-color: transparent;
+    background: transparent;
     border: none;
-    text-align: center;
-    text-decoration: none;
     cursor: pointer;
-    margin-left: 87px;
-    padding: 0;
 
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
+    text-align: center;
+    text-decoration: none;
+
+    margin-left: 87px;
+    padding: 0;
 }
 
 .sign-up-button
 {
     background-color: #05090c;
     border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 16px;
-    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+
     width: 247px;
     height: 55px;
-    border-radius: 5px;
+
     padding: 0;
 }
 
@@ -110,6 +121,7 @@ body
     display: flex;
     flex-direction: row;
     align-items: center;
+
     margin: 158px 0 61px 178px;
 }
 
@@ -124,6 +136,7 @@ body
     font-weight: 600;
     font-size: 100px;
     line-height: 122px;
+
     width: 745px;
     height: 138px;
 }
@@ -134,20 +147,24 @@ body
     font-weight: 400;
     font-size: 26px;
     line-height: 120%;
-    width: 545px;
     color: rgba(0, 0, 0, 0.7);
+
+    width: 545px;
+
     margin: 5px 0 46px 0;
 }
 
 .hero__img
 {
     object-fit: cover;
+
     width: 100%;
 }
 
 .benefits
 {
     background: black;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,6 +175,7 @@ body
     display: inline-grid;
     justify-items: center;
     grid-column-gap: 110px;
+    -ms-grid-columns: 291px 342px 284px;
     grid-template-columns: 291px 342px 284px;
 
     margin-top: 111px;
@@ -194,6 +212,7 @@ body
     display: flex;
     flex-direction: column;
     align-items: center;
+
     margin-top: 189px;
 }
 
@@ -202,6 +221,7 @@ body
     display: flex;
     flex-direction: row;
     align-items: center;
+
     margin-bottom: 77px;
 }
 
@@ -215,6 +235,7 @@ body
     font-weight: 500;
     font-size: 48px;
     line-height: 126.06%;
+
     margin-bottom: 26px;
 }
 
@@ -243,6 +264,7 @@ body
     display: flex;
     flex-direction: column;
     align-items: center;
+
     margin-top: 59px;
 }
 
@@ -250,21 +272,26 @@ body
 {
     display: inline-grid;
     grid-gap: 30px;
-
+    -ms-grid-columns: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+
     margin-top: 33px;
 }
 
 .about-card
 {
-    border-radius: 7px;
     background-color: black;
-    width: 271px;
-    height: 121px;
-    padding: 32px 48px 37px 39px;
+    border-radius: 7px;
+
     display: flex;
     flex-direction: column;
+
+    width: 271px;
+    height: 121px;
+
+    padding: 32px 48px 37px 39px;
 }
 
 .about-card__text
@@ -274,6 +301,7 @@ body
     font-size: 18px;
     line-height: 21px;
     color: white;
+
     width: 250px;
 }
 
@@ -302,12 +330,14 @@ body
 
 .footer
 {
-    vertical-align: middle;
-    align-items: center;
-    background-color: black;
-    width: auto;
-    height: 108px;
+    background: black;
+
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    width: auto;
+    height: 108px;
+
     margin-top: 289px;
 }

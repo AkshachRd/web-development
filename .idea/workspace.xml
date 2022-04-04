@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b45ac07-0562-486e-b0e3-b17881736c5a" name="Default Changelist" comment="Начата разработка правильной вёрстки сайта">
+    <list default="true" id="3b45ac07-0562-486e-b0e3-b17881736c5a" name="Default Changelist" comment="Внесены исправления в БЭМ наименования и верстку блока benefits.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lw5/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/lw5/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lw5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lw5/index.html" afterDir="false" />
@@ -81,7 +81,7 @@
       <workItem from="1647487045905" duration="23922000" />
       <workItem from="1647884512319" duration="113000" />
       <workItem from="1647884634756" duration="133000" />
-      <workItem from="1648707208491" duration="5420000" />
+      <workItem from="1648707208491" duration="9352000" />
     </task>
     <task id="LOCAL-00001" summary="Boolean variables were aligned to PHP code style">
       <created>1583674723080</created>
@@ -104,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647601273083</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Внесены исправления в БЭМ наименования и верстку блока benefits.">
+      <created>1648716719197</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1648716719197</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +132,7 @@
     <MESSAGE value="Boolean variables were aligned to PHP code style" />
     <MESSAGE value="The bugs were fixed" />
     <MESSAGE value="Свёрстана страница новой lw5. Старая версия помещена в lw5\legacy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Свёрстана страница новой lw5. Старая версия помещена в lw5\legacy" />
+    <MESSAGE value="Внесены исправления в БЭМ наименования и верстку блока benefits." />
+    <option name="LAST_COMMIT_MESSAGE" value="Внесены исправления в БЭМ наименования и верстку блока benefits." />
   </component>
 </project>
