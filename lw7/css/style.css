@@ -3,7 +3,7 @@
 body
 {
     display: block;
-    width: 1920px;
+    width: auto;
 }
 
 .title
@@ -34,7 +34,7 @@ body
     width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
     width: fill-available;
 
-    padding: 30px 120px;
+    padding: 30px 0;
 }
 
 .header__container
@@ -42,10 +42,13 @@ body
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     width: -moz-available;          /* WebKit-based browsers will ignore this. */
     width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
     width: fill-available;
+    height: 55px;
+    margin: 0 120px;
 }
 
 .header__logo
@@ -71,7 +74,7 @@ body
     margin-right: 99px;
 }
 
-.nav-bar__button
+.nav-bar__button, .nav-menu__button
 {
     background: transparent;
     border: none;
@@ -87,6 +90,32 @@ body
 
     margin-left: 87px;
     padding: 0;
+}
+
+.nav-menu__button
+{
+    margin: 10px 0;
+}
+
+.nav-menu__toggle
+{
+    background: none;
+    display: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-menu__container
+{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-menu__container_is-open
+{
+    display: none;
 }
 
 .sign-up-button
@@ -119,10 +148,18 @@ body
 .hero
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 
-    margin: 158px 0 61px 178px;
+    margin-top: 158px;
+    margin-bottom: 61px;
+}
+
+.hero__container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .hero__paragraph
@@ -149,15 +186,13 @@ body
     line-height: 120%;
     color: rgba(0, 0, 0, 0.7);
 
-    width: 545px;
+    max-width: 545px;
 
     margin: 5px 0 46px 0;
 }
 
 .hero__img
 {
-    object-fit: cover;
-
     width: 100%;
 }
 
@@ -227,7 +262,7 @@ body
 
 .content-card__paragraph
 {
-    width: 574px;
+    max-width: 574px;
 }
 
 .content-card__title
@@ -235,6 +270,7 @@ body
     font-weight: 500;
     font-size: 48px;
     line-height: 126.06%;
+    text-align: center;
 
     margin-bottom: 26px;
 }
@@ -340,4 +376,143 @@ body
     height: 108px;
 
     margin-top: 289px;
+}
+
+@media screen and (max-width: 1600px)
+{
+    .hero__container
+    {
+        flex-direction: column-reverse;
+    }
+
+    .hero__paragraph
+    {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1366px)
+{
+    .nav-bar__wrapper
+    {
+        margin-right: 60px;
+    }
+
+    .nav-bar__button
+    {
+        margin-left: 40px;
+    }
+
+    .benefits__container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefits__card
+    {
+        max-width: 342px;
+        margin: 30px 0;
+    }
+
+    .about__container
+    {
+        -ms-grid-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        -ms-grid-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+    .nav-bar
+    {
+        display: none;
+    }
+
+    .nav-menu__toggle
+    {
+        display: block;
+    }
+
+    .nav-menu__container_is-open
+    {
+        display: flex;
+    }
+
+    .hero__title
+    {
+        width: auto;
+    }
+
+    .hero__img img
+    {
+        width: 100%;
+    }
+
+    .content-card
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-card__img_first, .content-card__img_second
+    {
+        margin: 0;
+    }
+
+    .content-card__img img
+    {
+        width: 100%;
+    }
+
+    .content-card_mobile
+    {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .header__container
+    {
+        margin: 0 60px;
+    }
+
+    .hero__paragraph
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    .hero__title
+    {
+        font-size: 70px;
+        line-height: 70px;
+        height: auto;
+    }
+
+    .sign-up-button_long
+    {
+        width: 247px;
+    }
+
+    .about__container
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 380px)
+{
+    .about-card
+    {
+        padding: 32px 28px 37px 19px;
+    }
 }
