@@ -1,4 +1,4 @@
-body
+    body
 {
     display: block;
     width: auto;
@@ -373,7 +373,7 @@ body
     width: auto;
     height: 108px;
 
-    margin-top: 289px;
+    margin-top: 197px;
 }
 
 @media screen and (max-width: 1600px)
@@ -513,4 +513,140 @@ body
     {
         padding: 32px 28px 37px 19px;
     }
+}
+
+.container
+{
+    display: table;
+    margin: 100px auto 0 auto;
+}
+
+.form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_horizontal
+{
+    flex-direction: row;
+}
+
+.form__img
+{
+    height: 307px;
+}
+
+.form__title
+{
+    font: 500 26px 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+.form__container
+{
+    display: flex;
+    flex-direction: column;
+    margin: 32px 0 0 0;
+}
+
+.form__input
+{
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    border: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    outline: none;
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+
+    width: 480px;
+    height: 64px;
+
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.form__input_text
+{
+    background: white;
+    border: 2px solid #c0c0c0;
+    border-radius: 4px;
+
+    font-size: 18px;
+    color: black;
+
+    padding-left: 28px;
+}
+
+.form__input_text::placeholder
+{
+    opacity: 1;
+    color: #999999;
+}
+
+.form__input_select::-ms-expand {
+    display: none;
+}
+
+.form__input_select {
+    background-image: url("../images/select_arrow.svg");
+    background-position: calc(100% - 30px) 50%;
+    background-repeat: no-repeat;
+}
+
+.form__checkbox {
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+}
+
+.form__checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    font: 400 16px 'Roboto Condensed', sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 15px 0 35px 0;
+}
+.form__checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid #c0c0c0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-right: 8px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 50%;
+
+    transition: background-color 75ms ease-in,
+                border-color 75ms ease-in;
+}
+
+.form__checkbox:checked+label::before {
+    background-color: #ee58b6;
+    border-color: #ee58b6;
+    background-image: url("../images/checkmark.svg")
+}
+
+.form__input_submit
+{
+    background: black;
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 18px;
+    color: white;
 }

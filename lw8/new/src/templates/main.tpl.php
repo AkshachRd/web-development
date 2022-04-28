@@ -145,6 +145,8 @@
             </div>
         </div>
 
+        <?php include 'form.tpl.php' ?>
+
         <div class="footer">
             <div class="footer__logo">
                 <img draggable="false" src="images/logo_bottom.svg" alt="Logo">
