@@ -10,13 +10,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto+Condensed:wght@300;400&display=swap"
               rel="stylesheet">
+        <script defer type="module" src="scripts/popup.js"></script>
     </head>
     <body>
-        <script type="text/javascript">
-            function menuToggle() {
-                document.getElementsByClassName('nav-menu__container')[0].classList.toggle('nav-menu__container_is-open');
-            }
-        </script>
+        <?php include 'popup.tpl.php' ?>
+        <div id="overlay"></div>
+
         <div class="header">
             <div class="header__container">
                 <div class="header__logo">
@@ -144,8 +143,6 @@
                 </div>
             </div>
         </div>
-
-        <?php include 'form.tpl.php' ?>
 
         <div class="footer">
             <div class="footer__logo">

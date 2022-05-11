@@ -1,4 +1,4 @@
-    body
+body
 {
     display: block;
     width: auto;
@@ -33,6 +33,7 @@
     width: fill-available;
 
     padding: 30px 0;
+    z-index: 1;
 }
 
 .header__container
@@ -122,6 +123,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    outline: none;
 
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -515,10 +517,42 @@
     }
 }
 
-.container
+#overlay {
+    display: none;
+    background-color: rgba(0,0,0,0.7);
+    position:fixed;
+    left:0;
+    top: 0;
+    width:100%;
+    z-index: 2;
+    height:100%;
+}
+
+.popup__container
 {
-    display: table;
-    margin: 100px auto 0 auto;
+    display: none;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%) scale(0.5);
+    width: 640px;
+    height: 847px;
+    background: white;
+    box-shadow: 0 16px 48px rgba(60, 0, 61, 0.48);
+    border-radius: 12px;
+    z-index: 3;
+}
+
+#popup__close-button
+{
+    border: none;
+    position: absolute;
+    top: 15px;
+    left: calc(100% - 35px);
+    background: url("../images/close_button.svg");
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
 }
 
 .form
