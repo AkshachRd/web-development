@@ -2,35 +2,24 @@ INSERT INTO faculty (name) VALUES ('ИСА');
 INSERT INTO faculty (name) VALUES ('ФИиВТ');
 INSERT INTO faculty (name) VALUES ('ЭФ');
 
-INSERT INTO `group` (name) VALUES ('ПС-11');
-INSERT INTO `group` (name) VALUES ('ПС-12');
-INSERT INTO `group` (name) VALUES ('ПС-13');
-INSERT INTO `group` (name) VALUES ('ПС-21');
-INSERT INTO `group` (name) VALUES ('ПС-22');
+INSERT INTO `group` (name,faculty_id) VALUES ('ПС-11', 2);
+INSERT INTO `group` (name,faculty_id) VALUES ('ПС-12', 2);
+INSERT INTO `group` (name,faculty_id) VALUES ('ПС-13', 2);
+INSERT INTO `group` (name,faculty_id) VALUES ('ПС-21', 2);
+INSERT INTO `group` (name,faculty_id) VALUES ('ПС-22', 2);
 
-INSERT INTO `group` (name) VALUES ('АРХ-11');
-INSERT INTO `group` (name) VALUES ('АРХ-12');
-INSERT INTO `group` (name) VALUES ('АРХ-21');
-INSERT INTO `group` (name) VALUES ('АРХ-22');
-INSERT INTO `group` (name) VALUES ('АРХ-31');
+INSERT INTO `group` (name,faculty_id) VALUES ('АРХ-11', 1);
+INSERT INTO `group` (name,faculty_id) VALUES ('АРХ-12', 1);
+INSERT INTO `group` (name,faculty_id) VALUES ('АРХ-21', 1);
+INSERT INTO `group` (name,faculty_id) VALUES ('АРХ-22', 1);
+INSERT INTO `group` (name,faculty_id) VALUES ('АРХ-31', 1);
 
-INSERT INTO `group` (name) VALUES ('ИНФ-11');
-INSERT INTO `group` (name) VALUES ('ИНФ-12');
-INSERT INTO `group` (name) VALUES ('ИНФ-13');
-INSERT INTO `group` (name) VALUES ('ИНФ-21');
-INSERT INTO `group` (name) VALUES ('ИНФ-22');
+INSERT INTO `group` (name,faculty_id) VALUES ('ИНФ-11', 3);
+INSERT INTO `group` (name,faculty_id) VALUES ('ИНФ-12', 3);
+INSERT INTO `group` (name,faculty_id) VALUES ('ИНФ-13', 3);
+INSERT INTO `group` (name,faculty_id) VALUES ('ИНФ-21', 3);
+INSERT INTO `group` (name, faculty_id) VALUES ('ИНФ-22', 3);
 
-INSERT INTO faculty_has_group VALUES (1, 4);
-INSERT INTO faculty_has_group VALUES (1, 5);
-INSERT INTO faculty_has_group VALUES (1, 6);
-
-INSERT INTO faculty_has_group VALUES (2, 1);
-INSERT INTO faculty_has_group VALUES (2, 2);
-INSERT INTO faculty_has_group VALUES (2, 3);
-
-INSERT INTO faculty_has_group VALUES (3, 7);
-INSERT INTO faculty_has_group VALUES (3, 8);
-INSERT INTO faculty_has_group VALUES (3, 9);
 
 INSERT INTO student (first_name, last_name, birthday, group_id) VALUES ('Агафья', 'Травникова', '2003-05-01', 1);
 INSERT INTO student (first_name, last_name, birthday, group_id) VALUES ('Дарья', 'Никифорова', '2004-01-17', 1);
