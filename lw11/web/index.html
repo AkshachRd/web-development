@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥🥵🥵🥵</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto+Condensed:wght@300;400&display=swap"
+          rel="stylesheet">
+    <script defer type="module" src="scripts/popup.js"></script>
+    <script defer type="module" src="scripts/handleForm.js"></script>
+</head>
+<body>
+    <div id="popup" class="popup__container">
+        <button id="popup__close-button"></button>
+        <span id="form-error">Упс.. Произошла ошибка!</span>
+        <form method="post" class="form">
+            <div class="form__img">
+                <img src="images/welcome.png" alt="Welcome">
+            </div>
+            <h2 class="form__title">Записаться на курс</h2>
+
+            <div class="form__container">
+                <label>
+                    <input type="text" name="name" placeholder="Ваше имя" pattern="[A-Za-zА-Яа-яЁё]{1,}" required class="form__input form__input_text">
+                </label>
+                <label>
+                    <input type="email" name="email" placeholder="Email" required class="form__input form__input_text">
+                </label>
+                <label>
+                    <select name="activity" required class="form__input form__input_text form__input_select">
+                        <option value="" disabled selected hidden>Деятельность</option>
+                        <option value="programmer">Программист</option>
+                        <option value="designer">Дизайнер</option>
+                        <option value="marketer">Маркетолог</option>
+                    </select>
+                </label>
+
+                <input type="checkbox" class="form__checkbox" id="agreement" name="agreement">
+                <label for="agreement">Согласен получать информационные материалы о старте курса</label>
+
+                <input type="submit" value="Записаться на курс" class="form__input form__input_submit">
+            </div>
+        </form>
+    </div>
+    <div id="overlay"></div>
+
+    <div class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <img draggable="false" src="images/logo_header.svg" alt="Logo">
+            </div>
+            <div class="nav-bar">
+                <div class="nav-bar__wrapper">
+                    <button class="nav-bar__button">Что будет на курсе?</button>
+                    <button class="nav-bar__button">Вопросы</button>
+                    <button class="nav-bar__button">Автор</button>
+                </div>
+                <button class="sign-up-button">Записаться на курс</button>
+            </div>
+            <button class="nav-menu__toggle" onclick="menuToggle()">
+                <img src="./images/menu_icon.svg" alt="Menu">
+            </button>
+
+        </div>
+        <div class="nav-menu__container">
+            <button class="nav-menu__button">Что будет на курсе?</button>
+            <button class="nav-menu__button">Вопросы</button>
+            <button class="nav-menu__button">Автор</button>
+            <button class="sign-up-button">Записаться на курс</button>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="hero__container">
+            <div class="hero__paragraph">
+                <h1 class="hero__title title">Не <span class="title__highlighter">делай</span> это</h1>
+                <p class="hero__desc">Онлайн-курс для творческих людей, о том, как управлять своим временем</p>
+                <button class="sign-up-button sign-up-button_long">Записаться на курс</button>
+            </div>
+            <div class="hero__img">
+                <img draggable="false" src="images/done.png" alt="Done">
+            </div>
+        </div>
+    </div>
+
+    <div class="benefits">
+        <div class="benefits__container">
+            <div class="benefits__card">
+                <div class="benefits__img">
+                    <img draggable="false" src="./images/time.svg" alt="Clock">
+                </div>
+                <p class="benefits__text">Для тех, у кого слишком много идей и слишком мало времени</p>
+            </div>
+            <div class="benefits__card">
+                <div class="benefits__img">
+                    <img draggable="false" src="./images/notebook.svg" alt="Notebook">
+                </div>
+                <p class="benefits__text">Метод «списка не дел», который позволит успевать и реализовывать</p>
+            </div>
+            <div class="benefits__card">
+                <div class="benefits__img">
+                    <img draggable="false" src="./images/target.svg" alt="Target">
+                </div>
+                <p class="benefits__text">Курс научит творческих людей сосредоточиваться</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content-card">
+            <div class="content-card__img content-card__img_first">
+                <img draggable="false" src="./images/finances.png" alt="Finances">
+            </div>
+            <div class="content-card__paragraph">
+                <h2 class="content-card__title title">Ты не успеешь</h2>
+                <p class="content-card__desc">Всех творческих людей объединяет одна проблема - отсутствие времени на реализацию
+                    идей. Как прибавить суткам часы, рассмотрим в нашем курсе.</p>
+            </div>
+        </div>
+        <div class="content-card content-card_mobile">
+            <div class="content-card__paragraph">
+                <h2 class="content-card__title title">Опять дедлайн</h2>
+                <p class="content-card__desc">В мире, где столько всего интересного, когда же успевать жить?</p>
+            </div>
+            <div class="content-card__img content-card__img_second">
+                <img draggable="false" src="./images/mind_blowing.png" alt="Mind Blowing">
+            </div>
+        </div>
+    </div>
+
+    <div class="about">
+        <h2 class="content-card__title title">На курсе ты <span class="title__highlighter">сможешь</span></h2>
+        <div class="about__container">
+            <div class="about-card">
+                <div class="about-card__img">
+                    <img draggable="false" src="./images/hand_1.svg" alt="One">
+                </div>
+                <p class="about-card__text ">Понять, что нужно делать, а что делать не стоит.</p>
+            </div>
+            <div class="about-card">
+
+                <div class="about-card__img">
+                    <img draggable="false" src="./images/hand_2.svg" alt="Two">
+                </div>
+                <p class="about-card__text">Перестать себя искусственно ограничивать.</p>
+            </div>
+            <div class="about-card">
+                <div class="about-card__img">
+                    <img draggable="false" src="./images/hand_3.svg" alt="Three">
+                </div>
+                <p class="about-card__text about__desc_short">Определить сильные стороны
+                    и начать использовать слабые.</p>
+            </div>
+            <div class="about-card">
+                <div class="about-card__img">
+                    <img draggable="false" src="./images/hand_4.svg" alt="Four">
+                </div>
+                <p class="about-card__text">Научиться достигать любой цели в 3 понятных шага.</p>
+            </div>
+            <div class="about-card">
+                <div class="about-card__img">
+                    <img draggable="false" src="./images/hand_5.svg" alt="Five">
+                </div>
+                <p class="about-card__text about__desc_shortest">Сотрудничать эффективно и с правильными людьми.</p>
+            </div>
+            <div class="about-card">
+                <div class="about-card__img">
+                    <img draggable="false" src="./images/hand_6.svg" alt="Six">
+                </div>
+                <p class="about-card__text about__desc_long">Оптимизировать общение с клиентами и проведение совещаний.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer__logo">
+            <img draggable="false" src="images/logo_bottom.svg" alt="Logo">
+        </div>
+    </div>
+</body>
+</html>

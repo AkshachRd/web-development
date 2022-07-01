@@ -1,0 +1,50 @@
+body
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.feedback__button
+{
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+    width: 372px;
+    height: 64px;
+
+    padding: 0;
+}
+
+.feedback__container
+{
+    display: flex;
+}
+
+.feedback__card
+{
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+    width: 372px;
+    height: 288px;
+
+    padding: 0;
+}
